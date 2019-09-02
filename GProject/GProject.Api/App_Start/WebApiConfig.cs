@@ -6,6 +6,7 @@ using System.Web.Http;
 using GProject.Api.IoC;
 using GProject.Core.Mapping;
 using GProject.Infrastructure.DataStore;
+using Newtonsoft.Json.Serialization;
 
 namespace GProject.Api
 {
@@ -15,7 +16,9 @@ namespace GProject.Api
         {
             // IoC...
             config.DependencyResolver = Bootstraper.Bootstrap();
-            
+
+            config.Formatters.JsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+
             // Domain vs Model vs ViewModel mapper configuration...
             AutomapperInitializer.Initialize();
 
