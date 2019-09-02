@@ -51,7 +51,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Context.cs" />
     <Compile Include="Domain\Assignment.cs" />
     <Compile Include="Domain\Project.cs" />
     <Compile Include="Domain\User.cs" />
