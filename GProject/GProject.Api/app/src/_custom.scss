@@ -1,0 +1,19 @@
+﻿$body-bg: #fff;
+
+.material-icons.md-18 { 
+  font-size: 1.3rem;
+  cursor: default; 
+  color: rgb(167, 181, 245);
+  cursor: default;
+  padding: 2px 10px;
+}
+
+.badge {
+  padding: 2px 10px
+}
+
+.usr-list__list {
+  & table {
+    margin: 1rem;
+  }
+}
